@@ -42,6 +42,7 @@ class _LoginWidgetState extends State<LoginWidget> {
               decoration: BoxDecoration(
                   color: Colors.white, borderRadius: BorderRadius.circular(20)),
               child: TexfieldPersonalizado(
+                textoOscuro: true,
                 titulo: "Contraseña",
                 controller: contrasenia2,
               ),

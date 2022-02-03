@@ -178,14 +178,17 @@ class TexfieldPersonalizado extends StatelessWidget {
     Key? key,
     required this.titulo,
     required this.controller,
+    this.textoOscuro = false,
   }) : super(key: key);
 
   final String titulo;
   final TextEditingController controller;
+  bool textoOscuro = false;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      obscureText: textoOscuro,
       controller: controller,
       decoration: InputDecoration(
         focusColor: Colors.white,
